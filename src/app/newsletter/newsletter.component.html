@@ -1,0 +1,23 @@
+<div class="modal-newsletter">
+  <h4 mat-dialog-title>Subscribe to our monthly newsletter</h4>
+
+  <div mat-dialog-content>
+    <mat-icon color="warn" class="icon-box">email</mat-icon>
+    <p>Join our subscriber's list to get the latest updates and articles delivered directly in your inbox.</p>
+    <form>
+      <div class="newsletter-form-field">
+        <mat-form-field class="newsletter-input">
+          <mat-label>Email</mat-label>
+          <input matInput [formControl]="newsletterForm">
+          <mat-error *ngIf="newsletterForm.hasError('email') && !newsletterForm.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="newsletterForm.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" mat-dialog-close (click)="subscribe()"  [disabled] = "!newsletterForm.valid">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>

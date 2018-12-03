@@ -1,0 +1,7 @@
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+table {
+  width: 50%;
+  margin: 30px auto;
+}

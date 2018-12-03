@@ -1,0 +1,6 @@
+.modal-newsletter {color: #999;font-size: 15px; display: flex;flex-direction: column; text-align: center}
+.modal-newsletter h4 {color: #000;font-size: 30px;margin: 0;font-weight: bold;text-align: center}
+.icon-box {font-size:80px;z-index: 9;text-align: center;margin: 10px 0;}
+.hint-text {margin: 100px auto;text-align: center;}
+.newsletter-form-field {display: flex; flex-direction: row;justify-content: space-evenly}
+.newsletter-input {flex-basis: 40%}
